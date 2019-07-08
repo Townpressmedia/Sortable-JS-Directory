@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<style>
+    
+/* civic style css adaptation start */
+
+/* active to render a button as default active <button class="btn" */
+
+
+
+#structuralContainer8 { /* sidebar color */
+    background-color: #125682;
+    border: 0 none;
+}
+
+.widget.skin43 a:link {
+    text-decoration: none;
+}
+
+.moduleContentNew a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.moduleContentNew a:link {
+    color: #ffffff;
+  text-decoration: none;
+}
+
+/* civic style css adaptation end */
+    
+
+/* Style for listings */    
+.filterDiv {
+  float: center;
+  background-color: #125682;
+  color: #ffffff;
+  width: 100px;
+  line-height: 50px;
+  text-align: center;
+  margin: 2px 2px;
+  display: none;
+  font-size: 16PX;
+  border-radius: 4px;
+  
+}
+
+
+/* unvisited link */
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+
+.show {
+  display: inline-block;
+   width: 87%;
+
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.container1 {
+ margin-top: 10px;
+  /*overflow: hidden;*/
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+position: static;
+min-height: 100vh;
+
+}
+    
+.myBtnContainer1  { /*not used yet*/
+  margin-top: 20px;
+  overflow: hidden;
+  -webkit-column-count: 1; /* Chrome, Safari, Opera */
+  -moz-column-count: 1; /* Firefox */
+  column-count: 1;
+
+}  
+ 
+
+/* Let's Style the main category buttons */
+.btn  {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 180px;
+  height: 55px;
+  margin: 2px;
+  vertical-align: text-top;
+}
+
+/* access button color */
+.btn1  {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #666667;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 180px; 
+  color: white;
+  height: 55px;
+  margin: 2px;
+  vertical-align: text-top;
+    
+}    
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+    
+@media only screen and (max-width: 520px) {
+.filterDiv {
+    font-size: 14PX;
+}
+    
+.btn  {
+  margin-top: 2px;
+  width: 100%;   
+
+} 
+.btn1  {
+   margin-top: 2px;
+  width: 100%;   
+
+} 
+
+.container1 {
+ 
+  margin-top: 2px;
+  overflow: hidden;
+  -webkit-column-count: 1; /* Chrome, Safari, Opera */
+  -moz-column-count: 1; /* Firefox */
+  column-count: 1;
+    
+    
+}  
+
+  .show {
+  margin: 2px;  
+  display: inline-block;
+  width: 99%;
+  align-content: center;
+      
+}  
+    
+    
+}
+</style>
+
+
+<h2>Online Databases</h2>
+
+<div id="myBtnContainer">
+    
+  <button class="btn" onclick="filterSelection('all')">Show all</button>
+  <button class="btn" onclick="filterSelection('books')">Books</button>
+  <button class="btn" onclick="filterSelection('business')">Business & Investing</button>
+  <button class="btn" onclick="filterSelection('children')">Children's Resources</button>
+  <button class="btn" onclick="filterSelection('education')">Education</button>
+  <button class="btn" onclick="filterSelection('genealogy')">Genealogy</button>
+  <button class="btn" onclick="filterSelection('health')">Health</button>
+  <button class="btn" onclick="filterSelection('history')">History</button>
+  <button class="btn" onclick="filterSelection('homework')">Homework</button>
+    <button class="btn" onclick="filterSelection('jobs')">Jobs</button>
+    <button class="btn" onclick="filterSelection('legal')">Legal</button>
+    <button class="btn" onclick="filterSelection('literature')">Literature & Biography</button>
+    <button class="btn" onclick="filterSelection('newspaper')">Magazine & Newspaper</button>
+    <button class="btn" onclick="filterSelection('people')">People</button>
+    <button class="btn" onclick="filterSelection('reference')">Reference</button>
+    <button class="btn" onclick="filterSelection('research')">Research & Journals</button>
+    <button class="btn" onclick="filterSelection('science')">Science</button>
+    <button class="btn" onclick="filterSelection('spanish')">Spanish</button>
+    <button class="btn" onclick="filterSelection('texas')">Texas</button><br>
+     <button class="btn1" onclick="filterSelection('libraryaccess')">In Library Access</button>
+     <button class="btn1" onclick="filterSelection('fullaccess')">Full Access</button>       
+    
+</div>
+    
+<div class="container1"> <!-- Single Database entries only | Make sure you add category filter-->
+             
+           <div class="filterDiv literature libraryaccess"><a href="http://www.libraryoftexas.org/service-proxy/texshare/?page=redirect&amp;collectionid=249" target="_blank">20th Century Poetry Collections</a></div>      
+            
+        
+            <div class="filterDiv research libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=a9h" target="_blank">Academic Search Complete</a></div>
+          
+            <div class="filterDiv reference education research fullaccess"><a href="http://www.accreditedonlinecolleges.org/" target="_blank">Accredited Colleges Online</a></div>
+        
+            <div class="filterDiv education fullaccess"><a href="http://www.aaregistry.org/" target="_blank">African American Registry</a></div>
+        
+            <div class="filterDiv science libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=agr" target="_blank">AGRICOLA</a></div>
+       
+            <div class="filterDiv research libraryaccess"><a href="http://www.libraryoftexas.org/service-proxy/texshare/?page=redirect&amp;collectionid=380" target="_blank">ALL EBSCO Databases</a></div>            
+        
+            <div class="filterDiv health libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=awh" target="_blank">Alt Health Watch</a></div>
+        
+            <div class="filterDiv history fullaccess"><a href="http://www.fofweb.com/Direct2.asp?ItemID=WE52&amp;ID=20606" target="_blank">American History Online</a></div>
+        
+            <div class="filterDiv history libraryaccess"><a href="http://www.fofweb.com/Direct2.asp?ItemID=WE43&amp;ID=20606" target="_blank">American Indian History Online</a></div>
+        
+            <div class="filterDiv genealogy history research libraryaccess"><a href="http://ancestrylibrary.proquest.com/" target="_blank">Ancestry Plus</a></div>
+        
+            <div class="filterDiv history libraryaccess"><a href="http://www.fofweb.com/Direct2.asp?ItemID=WE49&amp;ID=20606" target="_blank">Ancient Medieval History</a></div>
+        
+            <div class="filterDiv people reference fullaccess"><a href="http://www.anywho.com/" target="_blank">AnyWho</a></div>
+        
+            <div class="filterDiv business libraryaccess"><a href="http://infotrac.galegroup.com/itweb/txshrpub100049?db=AU" target="_blank">Associations Unlimited</a></div>
+        
+            <div class="filterDiv people books fullaccess"><a href="http://www.babynames.com" target="_blank">Baby Names</a></div>
+        
+            <div class="filterDiv reference libraryaccess"><a href="http://www.libraryoftexas.org/service-proxy/texshare/?page=redirect&amp;collectionid=631" target="_blank">Background Notes (U.S. Department of State)</a></div>
+       
+            <div class="filterDiv children fullaccess"><a href="http://bensguide.gpo.gov/" target="_blank">Ben's Guide to U.S. Government for Kids</a></div>
+       
+            <div class="filterDiv genealogy libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=fph" target="_blank">Bibliography of Native North Americans</a></div>
+       
+            <div class="filterDiv business fullaccess"><a href="http://bigcharts.marketwatch.com/" target="_blank">Big Charts</a></div>
+        
+            <div class="filterDiv people history fullaccess"><a href="http://www.biography.com/" target="_blank">Biography.com</a></div>
+        
+            <div class="filterDiv health fullaccess"><a href="https://www.biomedcentral.com/journals" target="_blank" class="Hyperlink">BioMed Central Open Access Journals</a></div>
+    
+    <div class="filterDiv business reference libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=bcr" target="_blank" class="Hyperlink">Business Continuity and Disaster Recovery Reference Center</a></div>
+    
+            
+            <div class="filterDiv jobs fullaccess"><a href="http://www.careerpath.com" target="_blank">CareerPath.com</a></div>
+        
+            <div class="filterDiv jobs fullaccess"><a href="http://www.careers.org/" target="_blank">Careers.org</a></div>
+    
+    <div class="filterDiv reference research libraryaccess"><a href="http://infotrac.galegroup.com/itweb/txshrpub100049?db=CHLL" target="_blank">Chilton's Auto Repair Manuals</a></div>
+        
+            <div class="filterDiv reference history fullaccess"><a href="https://www.cia.gov/library/publications/the-world-factbook/" target="_blank">CIA World Fact Book</a></div>
+        
+                               
+            <div class="filterDiv science libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=cph" target="_blank">Computer Source</a></div>
+           
+            <div class="filterDiv literature libraryaccess"><a href="http://infotrac.galegroup.com/itweb/txshrpub100049?db=GLD-7" target="_blank">Contemporary Authors</a></div>
+           
+                
+    <div class="filterDiv literature libraryaccess"><a href="http://infotrac.galegroup.com/itweb/txshrpub100049?db=GLD-7" target="_blank">Contemporary Literary Criticism Select</a></div>
+    
+            
+    <div class="filterDiv reference fullaccess"><a href="https://search.credoreference.com/" target="_blank">Credo Reference</a></div>
+    
+    <div class="filterDiv spanish fullaccess"><a href="http://www.rae.es/" target="_blank">Diccionario de la Real Academia Española</a></div>
+    
+    <div class="filterDiv literature libraryaccess"><a href="http://infotrac.galegroup.com/itweb/txshrpub100049?db=GLD-7" target="_blank">Dictionary of Literary Biography</a></div>
+                   
+            <div class="filterDiv research libraryaccess"><a href="http://www.doaj.org/" target="_blank">Directory of Open Access Journals</a></div>
+            
+            <div class="filterDiv children homework research libraryaccess"><a href="http://infotrac.galegroup.com/itweb/txshrpub100049?db=DC" target="_blank">Discovering Collection</a></div>          
+                       
+              
+    <div class="filterDiv books libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=nlebk" target="_blank">eBooks</a></div>
+    
+    <div class="filterDiv books libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=brd" target="_blank">EBSCO Book Review Digest Plus (H.W. Wilson)</a></div>
+        
+            <div class="filterDiv business libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=bth" target="_blank">EBSCO Business Source Complete</a></div>
+    
+    <div class="filterDiv education libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=20h" target="_blank">EBSCO Educational Administration Abstracts</a></div>
+          
+            <div class="filterDiv books libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=egi" target="_blank">EBSCO Essay and General Literature Index (H.W. Wilson)</a></div>
+    
+    <div class="filterDiv business libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=bsi" target="_blank">EBSCO Enhanced Business Search Interface</a></div>
+          
+            <div class="filterDiv books libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=hft" target="_blank">EBSCO Humanities Text (H.W. Wilson)</a></div>
+    
+    <!--<div class="filterDiv spanish libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=hft" target="_blank">Economia y Negocios</a></div>-->
+          
+            <div class="filterDiv children libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=explorae" target="_blank">Explora for Elementary / Primary Search</a></div>
+    
+    <div class="filterDiv children libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=explorahs" target="_blank">Explora for High School</a></div>
+    
+    <div class="filterDiv children libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=explorapl" target="_blank">Explora for Public Libraries</a></div>
+        
+            <div class="filterDiv spanish libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=fua" target="_blank">EBSCO Fuente Academica</a></div>
+          
+            <div class="filterDiv reference libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=hcrc" target="_blank">EBSCO Hobbies &amp; Crafts Reference Center</a></div>
+         
+            <div class="filterDiv reference libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=hirc" target="_blank">EBSCO Home Improvement Reference Center</a></div>
+         
+            <div class="filterDiv health libraryaccess"><a href="http://www.libraryoftexas.org/service-proxy/texshare/?page=redirect&amp;collectionid=328" target="_blank">EBSCO Natural and Alternative Treatments</a></div>
+          
+            <div class="filterDiv newspaper libraryaccess"><a href="http://www.libraryoftexas.org/service-proxy/texshare/?page=redirect&amp;collectionid=102" target="_blank">EBSCO Premier 1,800+</a></div>
+          
+            <div class="filterDiv books libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=pix" target="_blank">EBSCO Play Index (H.W. Wilson)</a></div>
+          
+            <div class="filterDiv books libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=ssx" target="_blank">EBSCO Short Story Index (H.W. Wilson)</a></div>
+    
+    <div class="filterDiv business libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=sbrc" target="_blank">EBSCO Small Business Reference Center</a></div>
+          
+            <div class="filterDiv reference libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=serrc" target="_blank">EBSCO Small Engine Repair Reference Center</a></div>
+          
+            <div class="filterDiv books libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=20h" target="_blank">Educational Administration Abstracts</a></div>
+         
+            <div class="filterDiv reference fullaccess"><a href="http://hirr.hartsem.edu/ency/" target="_blank">Encyclopedia of Religion and Society</a></div>
+          
+            <div class="filterDiv education libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=eric" target="_blank">ERIC</a></div>
+          
+    <div class="filterDiv health libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=chc" target="_blank">EBSCO Consumer Health Complete</a></div>
+    
+    <div class="filterDiv education fullaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=src" target="_blank">EBSCO Student Research Center Interface</a></div>
+    
+   
+    
+            <div class="filterDiv books libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=26h" target="_blank">Family Studies Abstracts</a></div>
+         
+            <div class="filterDiv education fullaccess"><a href="http://www.fastweb.com" target="_blank">Fastweb.com</a></div>
+          
+            <div class="filterDiv jobs fullaccess"><a href="http://www.jobsfed.com" target="_blank">Federal Jobs Digest</a></div>
+    
+    <div class="filterDiv reference fullaccess"><a href="http://www.foia.cia.gov/" target="_blank">Freedom of Information Act Electronic Reading Room</a></div>
+          
+            <div class="filterDiv reference libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=funk" target="_blank">Funk and Wagnall's New Encyclopedia</a></div>
+          
+            <div class="filterDiv books libraryaccess"><a href="http://find.galegroup.com/menu/commonmenu.do?userGroupName=txshrpub100049" target="_blank">All GaleGroup Databases</a></div>
+          
+            <div class="filterDiv books libraryaccess"><a href="http://go.galegroup.com/ps/start.do?p=GLS&amp;u=txshrpub100049" target="_blank">Gale Artemis Literary Sources</a></div>
+         
+            <div class="filterDiv books libraryaccess"><a href="http://infotrac.galegroup.com/itweb/txshrpub100049?db=GLD" target="_blank">Gale Literature Databases</a></div>
+          
+            
+    
+    <div class="filterDiv business libraryaccess"><a href="http://infotrac.galegroup.com/itweb/txshrpub100049?db=GSBB" target="_blank">Gale Small Business Builder</a></div>
+          
+            <div class="filterDiv books libraryaccess"><a href="http://infotrac.galegroup.com/itweb/txshrpub100049?db=GVRL" target="_blank">Gale Virtual Reference Library</a></div>
+          
+            <div class="filterDiv books libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=8gh" target="_blank">GreenFILE</a></div>
+           
+            
+    
+    <div class="filterDiv legal reference libraryaccess"><a href="http://infotrac.galegroup.com/itweb/txshrpub100049?db=TGLF" target="_blank">Gale Legal Forms</a></div>
+          
+            <div class="filterDiv genealogy fullaccess"><a href="http://www.archives.gov/research/genealogy/index.html" target="_blank">Genealogists and Family Historians</a></div>
+          
+            <div class="filterDiv texas books libraryaccess"><a href="http://www.libraryoftexas.org/service-proxy/texshare/?page=redirect&amp;collectionid=301" target="_blank">Handbook of Texas</a></div>
+         
+            <div class="filterDiv health libraryaccess"><a href="http://infotrac.galegroup.com/itweb/txshrpub100049?db=HRCA" target="_blank">Health Reference Center Academic</a></div>
+    
+
+                       
+            <div class="filterDiv health libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=hxh" target="_blank">Health Source: Consumer Edition</a></div>
+    
+    <div class="filterDiv health libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=hch" target="_blank">Health Source: Nursing/Academic Edition</a></div>
+
+        
+            <div class="filterDiv health fullaccess"><a href="http://www.healthy.net/" target="_blank">Health World Online</a></div>
+           
+            <div class="filterDiv health fullaccess"><a href="http://healthfinder.gov/" target="_blank">HealthFinder.gov</a></div>
+          
+            <div class="filterDiv genealogy libraryaccess"><a href="http://www.libraryoftexas.org/service-proxy/texshare/?page=redirect&amp;collectionid=190" target="_blank">HeritageQuest Online</a></div>
+    
+    <!--<div class="filterDiv jobs"><a href="https://www.indeed.com/jobs?q&l=Brownsville%2C TX" target="_blank">Indeed</a></div>-->
+           
+            <div class="filterDiv reference fullaccess"><a href="http://www.infoplease.com/world.html" target="_blank">InfoPlease.com World Almanac</a></div>
+           
+            <div class="filterDiv science libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=izh" target="_blank">Information Science and Technology Abstracts</a></div>
+    
+    <div class="filterDiv jobs education libraryaccess"><a href="https://www.learningexpresshub.com/productengine/LELIndex.html#/learningexpresslibrary/libraryhome?AuthToken=brownpl">Job and Career Accelerator</a></div>
+           
+            
+           
+            <!--<div class="filterDiv reference fullaccess"><a href="http://www.ipl.org/" target="_blank">Internet Access Library</a></div>-->
+           
+            <div class="filterDiv jobs fullaccess"><a href="http://jobsearch.monster.com/" target="_blank">Jobs at Monster.com</a></div>
+           
+            <div class="filterDiv spanish reference fullaccess"><a href="http://lanic.utexas.edu/indexesp.html" target="_blank">Latin American Network Information Center</a></div>        
+            
+            
+            <div class="filterDiv education libraryaccess"><a href="http://www.learningexpresslibrary3.com/?AuthToken=A573B47B-83C0-4983-94BC-AE795936BA2D" target="_blank">Learning Express</a></div>
+    
+    <div class="filterDiv legal reference libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=lgh" target="_blank">Legal Collection</a></div>
+           
+            <div class="filterDiv legal reference law libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=lirc" target="_blank">Legal Information Reference Center</a></div>
+           
+            <div class="filterDiv science research libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=lxh" target="_blank">Library Information Science &amp; Technology Abstracts (LISTA)</a></div>
+    
+    <div class="filterDiv literature libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=lrc" target="_blank">Literary Reference Center</a></div>
+           
+            <div class="filterDiv education libraryaccess"><a href="http://www.tutor.com/bpls" target="_blank">Live Homework Help</a></div>
+          
+            <div class="filterDiv research libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=mat" target="_blank">MAS Complete</a></div>
+           
+            <div class="filterDiv research libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=f6h" target="_blank">MasterFile and Academic Search
+</a></div>
+           
+            <div class="filterDiv education fullaccess"><a href="http://www.medicalbillingandcodingcertification.com/" target="_blank">Medical Billing and Coding Certification</a></div>
+           
+            <div class="filterDiv health spanish libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=lth" target="_blank">MedicLatina</a></div>
+           
+            <div class="filterDiv health libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=cmedm" target="_blank">MEDLINE</a></div>
+            
+            <div class="filterDiv health libraryaccess"><a href="http://www.libraryoftexas.org/service-proxy/texshare/?page=redirect&amp;collectionid=665" target="_blank">MedlinePlus</a></div>
+           
+            <div class="filterDiv reference fullaccess"><a href="http://www.m-w.com/" target="_blank">Merriam-Webster Dictionary and Thesaurus</a></div>
+            
+            <div class="filterDiv children libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=mih" target="_blank">Middle Search Plus</a></div>
+          
+            <div class="filterDiv reference libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=mth" target="_blank">Military and Government Collection</a></div>
+            
+            <div class="filterDiv health libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=wfh&return=y&group=main&site=wfh" target="_blank">Natural &amp; Alternative Treatments</a></div>
+           
+
+                       
+    <div class="filterDiv jobs fullaccess"><a href="http://neuvoo.com/jobs/?k=&l=Texas&f=&o=&p=&r=15" target="_blank">Neuvoo</a></div>
+    
+            <div class="filterDiv genealogy libraryaccess"><a href="https://access.newspaperarchive.com" target="_blank">Newspaper Archive</a></div>
+           
+            <div class="filterDiv newspaper libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=n5h" target="_blank">Newspaper Source Plus</a></div>
+           
+            <div class="filterDiv reference fullaccess"><a href="http://oed.com/" target="_blank">Oxford English Dictionaries</a></div>
+         
+            <div class="filterDiv children libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=prh" target="_blank">Primary Search</a></div>
+           
+            <div class="filterDiv education libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=tfh" target="_blank">Professional Development Collection</a></div>
+    
+    <div class="filterDiv reference spanish libraryaccess"><a href="http://learning.pronunciator.com/getstarted.php?library_id=15443623" target="_blank">Pronunciator English to Spanish</a></div>
+    
+    <div class="filterDiv reference spanish libraryaccess"><a href="http://learning.pronunciator.com/getstarted-procitizen.php?library_id=15443623" target="_blank">ProCitizen English to Spanish</a></div>
+    
+    <div class="filterDiv science fullaccess"><a href="http://www.plos.org/" target="_blank">Public Library of Science</a></div>
+           
+                       
+            <div class="filterDiv health science libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=pbh" target="_blank">Psychology and Behavioral Science Collection</a></div>
+    
+    <div class="filterDiv health fullaccess"><a href="http://www.ncbi.nlm.nih.gov/sites/entrez" target="_blank">PubMed</a></div>
+           
+            <div class="filterDiv libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=25h" target="_blank">Race Relations Abstracts</a></div>          
+            
+    
+    <div class="filterDiv reference libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=slrc" target="_blank">Referencia Latina</a></div>
+           
+            <div class="filterDiv business libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=bwh" target="_blank">Regional Business News</a></div>
+           
+            <div class="filterDiv reference libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=rlh" target="_blank">Religion and Philosophy</a></div>
+    
+               
+            <div class="filterDiv health fullaccess"><a href="http://health.salempress.com/" target="_blank">Salem Health</a></div>
+          
+            <div class="filterDiv health spanish libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=chc-spa" target="_blank">Salud en Espanol (Consumer Health Complete in Spanish)</a></div>
+           
+            
+           
+            <div class="filterDiv science libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=syh" target="_blank">Science and Technology Collection</a></div>
+           
+            <div class="filterDiv science fullaccess"><a href="http://www.fofweb.com/Direct2.asp?ItemID=WE40&amp;ID=20606" target="_blank">Science Online</a></div>
+            
+            <div class="filterDiv books libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=ser" target="_blank">Serials Directory</a></div>
+    
+    <div class="filterDiv books libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=ssx" target="_blank">Short Story Index (H.W. Wilson)</a></div>
+           
+            <div class="filterDiv newspaper research libraryaccess"><a href="http://discoverer.sirs.com/" target="_blank">SIRS Discoverer</a></div>
+           
+              
+       
+    <div class="filterDiv children libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=sur" target="_blank">Sustainability Reference Center</a></div> 
+    
+            <div class="filterDiv business fullaccess"><a href="http://www.sweets.com/" target="_blank">Sweet's</a></div>
+    
+    <div class="filterDiv education fullaccess"><a href="http://www.teachingbooks.net/" target="_blank">Teaching Books- Book Guides & Lesson Plans</a></div>
+    
+    <div class="filterDiv education libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=trh" target="_blank">Teacher Reference Center</a></div>
+            
+            <div class="filterDiv texas newspaper fullaccess"><a href="http://www.caller.com/" target="_blank">Texas Newspapers - Corpus Christi Caller</a></div>
+           
+            <div class="filterDiv texas reference fullaccess"><a href="http://www.texasalmanac.com/" target="_blank">Texas Almanac Online</a></div>
+          
+            <div class="filterDiv texas reference fullaccess"><a href="http://www.statutes.legis.state.tx.us/" target="_blank">Texas Code Online</a></div>
+          
+            <div class="filterDiv fullaccess"><a href="http://www.tdl.org/#feature1" target="_blank">Texas Digital Library</a></div>
+          
+            <div class="filterDiv fullaccess"><a href="http://www.libraryoftexas.org/service-proxy/texshare/?page=redirect&amp;collectionid=250" target="_blank">Texas Digital Sanborn Maps</a></div>
+            
+            <div class="filterDiv legal reference fullaccess"><a href="http://www.texaslawhelp.org" target="_blank">Texas Law Help.org</a></div>
+           
+            <div class="filterDiv texas newspaper libraryaccess"><a href="https://www.statesman.com/" target="_blank">Texas Newspaper - Austin American Stateman</a></div>
+         
+            <div class="filterDiv texas newspaper fullaccess"><a href="http://www.dallasnews.com/" target="_blank">Texas Newspaper - Dallas Morning News</a></div>
+           
+            <div class="filterDiv texas newspaper fullaccess"><a href="http://www.chron.com/" target="_blank">Texas Newspaper - Houston Chronicle</a></div>
+          
+            <div class="filterDiv texas newspaper fullaccess"><a href="http://www.themonitor.com/" target="_blank">Texas Newspaper - McAllen Monitor</a></div>
+          
+            <div class="filterDiv texas newspaper fullaccess"><a href="http://www.mysanantonio.com/expressnews" target="_blank">Texas Newspaper - San Antonio Express News</a></div>
+           
+            <div class="filterDiv texas newspaper fullaccess"><a href="http://www.valleystar.com/" target="_blank">Texas Newspaper - Valley Morning Star</a></div>
+           
+            <div class="filterDiv texas newspaper fullaccess"><a href="http://www.brownsvilleherald.com/" target="_blank">Texas Newspapers - Brownsville Herald</a></div>
+        
+            <div class="filterDiv texas newspaper fullaccess"><a href="http://texasobserver.org/" target="_blank">Texas Newspapers -Texas Observer</a></div>
+          
+            <div class="filterDiv reference texas libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=tih" target="_blank">Texas Reference Center</a></div>
+           
+            <div class="filterDiv reference fullaccess"><a href="http://www.thecatholicdirectory.com/" target="_blank">The Catholic Directory</a></div>
+         
+            <div class="filterDiv business fullaccess"><a href="http://www.fool.com" target="_blank">The Motley Fool</a></div>
+           
+            <div class="filterDiv reference fullaccess"><a href="http://thomas.loc.gov" target="_blank">Thomas Legislative Information (LOC)</a></div>
+          
+            <div class="filterDiv business fullaccess"><a href="http://www.thomasnet.com" target="_blank">ThomasNet</a></div>
+           
+            <div class="filterDiv newspaper libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=tth" target="_blank">TOPIC Search</a></div>
+           
+            <div class="filterDiv homework fullaccess"><a href="https://lhh.tutor.com/?ProgramGUID=856f5227-df03-4e8a-9ee8-c69ea7b60707" target="_blank">Tutor.com</a></div>
+           
+            <div class="filterDiv education fullaccess"><a href="http://brownsvilletx.universalclass.com/register.htm" target="_blank">Universal Class</a></div>
+           
+            <div class="filterDiv business fullaccess"><a href="http://www.sba.gov" target="_blank">U.S. Small Business Administration</a></div>
+            
+            <div class="filterDiv reference people fullaccess"><a href="http://www.census.gov/" target="_blank">US Census Online</a></div>
+           
+            <div class="filterDiv reference fullaccess"><a href="http://www.usa.gov/" target="_blank">USA.gov</a></div>
+           
+            <div class="filterDiv education jobs libraryaccess"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=voh" target="_blank">Vocational and Career Collection</a></div>
+          
+            <div class="filterDiv health fullaccess"><a href="http://www.webmd.com" target="_blank">WebMD</a></div>
+           
+            <div class="filterDiv reference fullaccess"><a href="http://www.fofweb.com/WGCO/default.aspx?ItemID=WE39" target="_blank">World Geography &amp; Culture Online</a></div>
+           
+            <div class="filterDiv books libraryaccess"><a href="http://www.libraryoftexas.org/service-proxy/texshare/?page=redirect&amp;collectionid=126" target="_blank">WorldCat</a></div>
+
+
+</div>
+   
+
+
+
+<script>  // the magical sorting action
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Let's add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+
+}
+</script>
+
+
+</html>
